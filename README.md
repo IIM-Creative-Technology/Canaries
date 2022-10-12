@@ -38,5 +38,5 @@ Run the project
 - [@Antoine](https://github.com/AntoineBendafiSchulmann)
 - [@Zoé](https://github.com/Zoemchl)
 - [@Matis](https://github.com/matdn)
-- [@Pierrooooo](https://github.com/Pierrooooo)
+- [@Pierre](https://github.com/Pierrooooo)
 

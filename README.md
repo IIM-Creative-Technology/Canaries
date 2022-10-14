@@ -1,42 +1,6 @@
 
-# Canaries
+The purpose of this branch was to try to create a database using NoSQL trought MongoDB and Mongoose.
 
-Node week project
+I started using a SQL database but soon realised that it was not the best option for a NodeJS project that needed real time exchange.
 
-We want to make a game based on cinematographic culture 
-You and your friend choose between 5 moovies/Tvshow and then you will fight for the win.
-To win you have to answer faster than your opponent.
-
-
-## Installation :
-
-If you don't already have nodemon on your computer 
-```bash
-  npm install -g nodemon
-```
-Go on the folder you want to put the project
-```bash
-  cd folder you choose
-```
-clone the repo
-```bash
-  git clone git@github.com:IIM-Creative-Technology/Canaries.git
-```
-Install the dependencies
-```bash
-  npm i
-```
-Run the project
-```bash
-  npm start
-```
-
-
-
-## Author
-
-- [@Antoine](https://github.com/AntoineBendafiSchulmann)
-- [@Zoé](https://github.com/Zoemchl)
-- [@Matis](https://github.com/matdn)
-- [@Pierre](https://github.com/Pierrooooo)
-
+That's why we tried to reorient the project on MongoDB Atlas and Mongoose. Unfortunelety, it's not over yet and not fully functional. There are still some issues on the import of data trought the collection and managing to link it with Socket.io and our game.

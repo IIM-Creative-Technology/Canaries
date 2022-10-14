@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
-	--success-color: #5cb85c;
-	--error-color: #d9534f;
+	--dark-color-a: #000000;
+	--dark-color-b: #000000;
+	--light-color: #09ff00;
+	--success-color: #ff00f7;
+	--error-color: #ff0800;
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: lores-12;
 }
 
 body {
@@ -36,6 +37,7 @@ a {
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
+	border-radius: 2px;
 }
 
 /* Chat Page */
@@ -59,6 +61,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-family: lores-12;
 }
 
 .chat-main {
@@ -123,6 +126,8 @@ a {
 .chat-form-container {
 	padding: 20px 30px;
 	background-color: var(--dark-color-a);
+	display: flex;
+	justify-content: center;
 }
 
 .chat-form-container form {
@@ -132,7 +137,6 @@ a {
 .chat-form-container input[type='text'] {
 	font-size: 16px;
 	padding: 5px;
-	height: 40px;
 	flex: 1;
 }
 
@@ -149,11 +153,13 @@ a {
 	background: var(--dark-color-a);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	color: var(--light-color);
 }
 
 .join-main {
 	padding: 30px 40px;
 	background: var(--dark-color-b);
+	
 }
 
 .join-main p {
@@ -167,6 +173,7 @@ a {
 .join-main label {
 	display: block;
 	margin-bottom: 5px;
+	color: var(--light-color);
 }
 
 .join-main input[type='text'] {
@@ -174,6 +181,7 @@ a {
 	padding: 5px;
 	height: 40px;
 	width: 100%;
+	
 }
 
 .join-main select {
@@ -186,6 +194,7 @@ a {
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+	padding: 4% 4%;
 }
 
 @media (max-width: 700px) {

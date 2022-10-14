@@ -61,6 +61,14 @@ io.on("connection", (socket) => {
         io.to(user.room).emit("message", formatMessage(user.username, msg));
     });
 
+
+// si l'utilisateur envoie un message le bot répond avec un message qui contient le message de l'utilisateur
+
+    socket.on("chatMessage", (msg) => {
+        const user = getCurrentUser(socket.id);
+        io.to(user.room).emit("message", formatMessage(botName, "ce que vous avez dit est chouette"));
+    });
+
   // Runs when client disconnects
     socket.on("disconnect", () => {
         const user = userLeave(socket.id);

@@ -62,10 +62,10 @@ io.on("connection", (socket) => {
     });
 
 
-// si l'utilisateur envoie un message le bot répond avec un message qui contient le message de l'utilisateur
+// if the user write a message the bot will send a message to the user
 
     socket.on("chatMessage", (msg) => {
-        const user = getCurrentUser(socket.id);
+        const user = getCurrentUser(socket.id);//identify the user who sent the message
         io.to(user.room).emit("message", formatMessage(botName, "ce que vous avez dit est chouette"));
     });
 

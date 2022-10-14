@@ -1,5 +1,5 @@
 
-# ChatCord App
+# ChatBox App
 Realtime Chat With Users & Rooms using Node.js, Express and Socket.io with Vanilla JS on the frontend with a custom UI
 ## Usage
 ```
@@ -10,4 +10,4 @@ Go to localhost:3000
 
 ## Notes
 
-faire un changement ds le code puis refresh le navigateur sinon sa plante
+if you change something in server.js , refresh your browser

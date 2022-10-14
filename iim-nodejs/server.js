@@ -7,7 +7,7 @@ const createAdapter = require("@socket.io/redis-adapter").createAdapter;//redis 
 const redis = require("redis");//redis is a database used to store the data in cache memory
 
 require("dotenv").config();
-const { createClient } = redis;//redis vas servir 
+const { createClient } = redis;
 const {
     userJoin,
     getCurrentUser,

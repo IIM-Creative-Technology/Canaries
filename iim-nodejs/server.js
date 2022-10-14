@@ -7,7 +7,7 @@ const createAdapter = require("@socket.io/redis-adapter").createAdapter;//redis 
 const redis = require("redis");//redis is a database used to store the data in cache memory
 
 require("dotenv").config();
-const { createClient } = redis;
+const { createClient } = redis;//redis vas servir 
 const {
     userJoin,
     getCurrentUser,
@@ -19,10 +19,12 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
 const botName = "Etienne";//bot name
+
 
 
 
@@ -42,7 +44,7 @@ io.on("connection", (socket) => {
         .to(user.room)
         .emit(
             "message",
-            formatMessage(botName, `${user.username} a rejoint le chat`)
+            formatMessage(botName, `${user.username} a rejoint la partie`)
         );
 
     // Send users and room info
@@ -81,4 +83,4 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`le serveur tourne sur le port: ${PORT}`));

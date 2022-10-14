@@ -9,3 +9,5 @@ Go to localhost:3000
 ```
 
 ## Notes
+
+faire un changement ds le code puis refresh le navigateur sinon sa plante

@@ -4,7 +4,7 @@ const express = require("express");
 const socketio = require("socket.io");
 const formatMessage = require("./utils/messages");//used to format the messages to be sent to the client
 const createAdapter = require("@socket.io/redis-adapter").createAdapter;//redis adapter is used to connect to redis server and store the data
-const redis = require("redis");
+const redis = require("redis");//redis is a database used to store the data in cache memory
 
 require("dotenv").config();
 const { createClient } = redis;
@@ -34,8 +34,8 @@ io.on("connection", (socket) => {
 
     socket.join(user.room);
 
-    // Welcome current user
-    socket.emit("message", formatMessage(botName, "Bienvenue sur ChatBox!"));
+    // Welcome current user to the room name
+    socket.emit("message", formatMessage(botName, "Bienvenue sur le thème " + user.room));
 
     // Broadcast when a user connects
     socket.broadcast
@@ -76,6 +76,7 @@ io.on("connection", (socket) => {
         });
         }
     });
+
 });
 
 const PORT = process.env.PORT || 3000;

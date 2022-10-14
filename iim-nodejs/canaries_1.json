@@ -1,0 +1,71 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"canaries"},
+{"type":"table","name":"answer","database":"canaries","data":
+[
+{"id":"74","answer":"Miles Morales","question_id":"1"},
+{"id":"75","answer":"Policier","question_id":"2"},
+{"id":"76","answer":"vend un costume de Spiderman","question_id":"3"},
+{"id":"77","answer":"2018","question_id":"4"},
+{"id":"78","answer":"tonton","question_id":"5"},
+{"id":"79","answer":"oncle","question_id":"6"},
+{"id":"80","answer":"2014","question_id":"7"},
+{"id":"81","answer":"Pilote","question_id":"8"},
+{"id":"82","answer":"Saturne","question_id":"9"},
+{"id":"83","answer":"Endurance","question_id":"10"},
+{"id":"84","answer":"STAY","question_id":"11"},
+{"id":"85","answer":"Ariane","question_id":"12"},
+{"id":"86","answer":"4","question_id":"13"},
+{"id":"87","answer":"Mr. Saito","question_id":"14"},
+{"id":"88","answer":"Non, je ne regrette rien (Edith Piaf)","question_id":"15"},
+{"id":"89","answer":"Elle se jette de son appartement confondant réalité et rêve","question_id":"16"},
+{"id":"90","answer":"Mariage ","question_id":"17"},
+{"id":"91","answer":"Cors","question_id":"18"},
+{"id":"92","answer":"Manque de confiance","question_id":"19"},
+{"id":"93","answer":"Peintre","question_id":"20"},
+{"id":"94","answer":"Robin","question_id":"21"},
+{"id":"95","answer":"Sarcasme","question_id":"22"},
+{"id":"96","answer":"3","question_id":"23"},
+{"id":"97","answer":"Caltech","question_id":"24"},
+{"id":"98","answer":"Harry Potter et le Prince de Sang-Mêlé","question_id":"25"}
+]
+}
+,{"type":"table","name":"question","database":"canaries","data":
+[
+{"id":"1","question":"Comment s’appelle le personnage principale?","title_id":"1"},
+{"id":"2","question":"Quel est le métier de son père ? ","title_id":"1"},
+{"id":"3","question":"Quel interaction effectue Stan Lee avec Spiderman ?","title_id":"1"},
+{"id":"4","question":"En quelle année est sortie le film ?","title_id":"1"},
+{"id":"5","question":"Qui donne un conseil de drague à Spiderman ?","title_id":"1"},
+{"id":"6","question":"En quelle année est sorti Interstellar ?","title_id":"2"},
+{"id":"7","question":"Avant d’être fermier, quel était le métier de Cooper ?","title_id":"2"},
+{"id":"8","question":"A côté de quelle planète se trouve le trou de ver découvert par les ingénieurs de la base secrète de la NASA ?","title_id":"2"},
+{"id":"9","question":"Quel est le nom du vaisseau spatial dans lequel Cooper et le reste de l’équipage vont voyager ?","title_id":"2"},
+{"id":"10","question":"Quel est le mot que reçoit Murphy (la fille de Cooper) en morse à travers la bibliothèque de sa chambre, avant le départ de son père ?","title_id":"2"},
+{"id":"11","question":"Quel est le nom de l’architecte ?","title_id":"3"},
+{"id":"12","question":"Combien y a t-il de rêves emboités lors de la mission de l’Inception ?","title_id":"3"},
+{"id":"13","question":"Qui est blessé par balle lors du premier palier de rêve ?","title_id":"3"},
+{"id":"14","question":"Quelle musique sert d’alarme avant le réveil d’un rêve?","title_id":"3"},
+{"id":"15","question":"Dans quel conditions meurt Mallorie « Mal » Cobb? ","title_id":"3"},
+{"id":"16","question":"Dans quel circonstance Ted rencontre sa femme ? ","title_id":"4"},
+{"id":"17","question":"Quel est l’instrument de musique volé par Ted afin de prouver son amour pour Robin ?","title_id":"4"},
+{"id":"18","question":"Quel est la raison pour laquelle Barney et Queen se sont séparé ?","title_id":"4"},
+{"id":"19","question":"Quel était le métier rêvé de Lily ?","title_id":"4"},
+{"id":"20","question":"Qui a le record dans le jeux de pêche dans le bar à thème du Minesota ?","title_id":"4"},
+{"id":"21","question":"Dans l’épisode ou Sheldon et Leonard range l’appartement de Penny, qu’écrit Leonard quand Penny vient se plaindre auprès de Sheldon?","title_id":"5"},
+{"id":"22","question":"Combien de fois Sheldon toque avant d’entrer dans une pièce ?","title_id":"5"},
+{"id":"23","question":"Dans quelle université travaillent les 4 amis de la série ?","title_id":"5"},
+{"id":"24","question":"Quelle personnage embarque à bord de l’ISS ?","title_id":"5"},
+{"id":"25","question":"Quel livre Harry Potter Sheldon spoile-t-il à Leonard ?","title_id":"5"}
+]
+}
+,{"type":"table","name":"title","database":"canaries","data":
+[
+{"id":"1","title":"Spider-Man | Into The Spider Verse"},
+{"id":"2","title":"Interstellar"},
+{"id":"3","title":"Inception"},
+{"id":"4","title":"How I Met Your Mother"},
+{"id":"5","title":"The Big Bang Theory"}
+]
+}
+]

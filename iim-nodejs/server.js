@@ -61,9 +61,9 @@ io.on("connection", (socket) => {
         io.to(user.room).emit("message", formatMessage(user.username, msg));
     });
 
+//verify the room name
 
 // if the user write a message the bot will send a message to the user
-
     socket.on("chatMessage", (msg) => {
         const user = getCurrentUser(socket.id);//identify the user who sent the message
         if (msg === "Bonjour") {

@@ -23,6 +23,10 @@ clone the repo
 ```bash
   git clone git@github.com:IIM-Creative-Technology/Canaries.git
 ```
+Go on the folder that oyu just cloned
+```bash
+  Canaries/iim-nodejs
+```
 Install the dependencies
 ```bash
   npm i

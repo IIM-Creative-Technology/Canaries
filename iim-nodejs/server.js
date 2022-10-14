@@ -66,7 +66,10 @@ io.on("connection", (socket) => {
 
     socket.on("chatMessage", (msg) => {
         const user = getCurrentUser(socket.id);//identify the user who sent the message
-        io.to(user.room).emit("message", formatMessage(botName, "ce que vous avez dit est chouette"));
+        if (msg === "Bonjour") {
+            io.to(user.room).emit("message", formatMessage(botName, "incorrect"));
+        }
+        
     });
 
   // Runs when client disconnects

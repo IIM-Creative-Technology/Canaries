@@ -23,7 +23,7 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-const botName = "Etienne";//bot name
+const botName = "Samuel Étienne";//bot name
 
 
 
@@ -37,7 +37,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // Welcome current user to the room name
-    socket.emit("message", formatMessage(botName, "Bienvenue sur le thème " + user.room));
+    socket.emit("message", formatMessage(botName, "Bienvenue sur le thème " + user.room +", écris Start pour démarer la partie."  ));
 
     // Broadcast when a user connects
     socket.broadcast
@@ -66,10 +66,10 @@ io.on("connection", (socket) => {
 // if the user write a message the bot will send a message to the user
     socket.on("chatMessage", (msg) => {
         const user = getCurrentUser(socket.id);//identify the user who sent the message
-        if (msg === "Bonjour") {
-            io.to(user.room).emit("message", formatMessage(botName, "incorrect"));
+        if (msg === "start" || msg ==="Start") {
+            io.to(user.room).emit("message", formatMessage(botName, "Que la partie commence! 🙌"));
+            io.to(user.room).emit("message", formatMessage(botName, "Quelle est l'année de naissance de Matou ?"));
         }
-        
     });
 
   // Runs when client disconnects

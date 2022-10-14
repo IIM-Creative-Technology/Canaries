@@ -1,7 +1,7 @@
 const path = require("path");
 const http = require("http");
-const express = require("express");
-const socketio = require("socket.io");
+const express = require("express");// Express web server framework used to create the server
+const socketio = require("socket.io");// Socket.io is a library that enables real-time, bidirectional and event-based communication between the browser and the server
 const formatMessage = require("./utils/messages");//used to format the messages to be sent to the client
 const createAdapter = require("@socket.io/redis-adapter").createAdapter;//redis adapter is used to connect to redis server and store the data
 const redis = require("redis");//redis is a database used to store the data in cache memory

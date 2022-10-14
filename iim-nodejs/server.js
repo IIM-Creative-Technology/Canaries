@@ -25,7 +25,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const botName = "Samuel Étienne";//bot name
 
-
+const countTour = 0
+// fetch('canaries_1.json')
+//     .then(response => response.json())
+    
 
 
 // Run when client connects
@@ -69,6 +72,9 @@ io.on("connection", (socket) => {
         if (msg === "start" || msg ==="Start") {
             io.to(user.room).emit("message", formatMessage(botName, "Que la partie commence! 🙌"));
             io.to(user.room).emit("message", formatMessage(botName, "Quelle est l'année de naissance de Matou ?"));
+        }
+        if (countTour === 1 || msg === '2002') {
+            io.to(user.room).emit("message", formatMessage(botName, "Bravo "+ user.username + ", tu gagnes 1 Point ! ✨✨"));
         }
     });
 

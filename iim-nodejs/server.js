@@ -7,7 +7,7 @@ const createAdapter = require("@socket.io/redis-adapter").createAdapter;//redis 
 const redis = require("redis");//redis is a database used to store the data in cache memory
 
 require("dotenv").config();
-const { createClient } = redis;//redis vas servir 
+const { createClient } = redis;
 const {
     userJoin,
     getCurrentUser,
@@ -59,6 +59,14 @@ io.on("connection", (socket) => {
         const user = getCurrentUser(socket.id);
 
         io.to(user.room).emit("message", formatMessage(user.username, msg));
+    });
+
+
+// if the user write a message the bot will send a message to the user
+
+    socket.on("chatMessage", (msg) => {
+        const user = getCurrentUser(socket.id);//identify the user who sent the message
+        io.to(user.room).emit("message", formatMessage(botName, "ce que vous avez dit est chouette"));
     });
 
   // Runs when client disconnects

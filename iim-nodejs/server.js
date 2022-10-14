@@ -61,7 +61,7 @@ io.on("connection", (socket) => {
         io.to(user.room).emit("message", formatMessage(user.username, msg));
     });
 
-//verify the room name
+//verify the room name the bot will send a message to the user with the room name
 
 // if the user write a message the bot will send a message to the user
     socket.on("chatMessage", (msg) => {

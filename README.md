@@ -33,7 +33,7 @@ Install the dependencies
 ```
 Run the project
 ```bash
-  npm start
+  npm run dev
 ```
 
 
